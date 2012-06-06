@@ -1,0 +1,1 @@
+# A project for working through the book 'Eloquent Javascript' by Marijn Haverbeke.
