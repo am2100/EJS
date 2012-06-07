@@ -1,6 +1,9 @@
 class PublicPagesController < ApplicationController
   def home
   end
+  
+  def notes
+  end
 
   def test
   end
