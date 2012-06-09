@@ -12,7 +12,8 @@ Ejs::Application.routes.draw do
   # This route can be invoked with purchase_url(:id => product.id)
   match 'test' => 'public_pages#test', :as => :test
   match 'add-numbers-from-0-to-10' => 'public_pages#add_0_to_10', :as => :add_0_to_10
-
+  match 'notes' => 'public_pages#notes', :as => :notes
+  match 'compute_powers' => 'public_pages#compute_powers', :as => :compute_powers
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 

@@ -1,0 +1,27 @@
+= javascript_include_tag 'compute_powers'
+
+%h2 Compute Powers
+%pre
+  :preserve
+    // A function for computing powers
+
+    function power(base, exponent) {
+
+      // The result is the base multiplied
+      // by the exponent. It will always be
+      // greater than or equal to x<sup>1</sup>
+      // which is why result is initialised
+      // to 1.
+      var result = 1;
+
+      for(var count = 0; count < exponent; count++)
+        result *= base;
+
+      return result
+    }
+
+%p
+  document.write(power(2,10))
+%script
+  document.write(power(2,10))
+

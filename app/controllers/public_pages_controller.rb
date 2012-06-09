@@ -10,4 +10,7 @@ class PublicPagesController < ApplicationController
 
   def add_0_to_10
   end
+
+  def compute_powers
+  end
 end
