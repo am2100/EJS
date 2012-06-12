@@ -1,4 +1,5 @@
 
+
 %h2 Notes
 %ul
   %li
@@ -34,3 +35,20 @@
             \.
           %li
             When a program starts up, this environment is not empty. It always contains a number of standard variables. When your browser loads a page, it creates a new environment and attaches these standard values to it. The variables created and modified by programs on that page survive until the browser goes to a new page.
+  %li
+    %h3 Chapter 2: Functions
+    %ul
+      %li
+        %h4 Nested Scope
+        %ul
+          %li
+            Functions defined inside other functions can refer to the local variables in their parent function, functions defined inside those inner functions can refer to variables in both their parent and their grandparent functions, and so on.
+          %li
+            Everything in Javascript is a value including functions. This means that the names of defined functions can be used like normal variables, and their content can be passed around and used in bigger expressions.
+          %li
+            Anonymous functions can be used to contain functionality that need not be named, and that is possibly only for short term use. Notable examples include Closures and Currying (The technique of transforming a function that takes multiple arguments in such a way that it can be called as a chain of functions each with a single argument).
+        %li
+          %h4 Closure: What happens to local variables when the function call that created them is no longer on the stack?
+          %ul
+            %li
+              
